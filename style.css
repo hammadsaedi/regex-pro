@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the header */
+  header {
+      background-color: #007BFF;
+      padding: 10px 0;
+  }
+  
+  /* Style for the navigation menu */
+  nav {
+      text-align: center;
+  }
+  
+  /* Style for the navigation links */
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  li {
+      display: inline;
+      margin-right: 10px;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+  }
+  
+  /* Hover effect for links */
+  a:hover {
+      text-decoration: underline;
+  }
+  
+
+/* Style for the <main> element */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for each form */
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Style for form titles */
+h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Style for form elements */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    /* Remove the focus outline */
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for text input border when regex is applied */
+input[type="text"].valid {
+    border: 2px solid green;
+}
+
+input[type="text"].invalid {
+    border: 2px solid red;
+}
+
+/* Style for required form elements */
+input.required:invalid,
+textarea.required:invalid {
+    border: 2px solid red;
+}
