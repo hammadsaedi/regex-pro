@@ -20,11 +20,6 @@ const sanitizationForm = [
         "explanation": "Remove all HTML tags from text",
         "regexPattern": "<.*?>"
     },
-    {
-        "title": "Remove HTML",
-        "explanation": "Remove all HTML tags from text",
-        "regexPattern": "/<style.*?<\/style>|<link[^>]*>|<script.*?<\/script>/gi;"
-    }
 ];
 
 const pages = {
