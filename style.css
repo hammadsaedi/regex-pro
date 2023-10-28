@@ -3,40 +3,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  /* Style for the header */
-  header {
-      background-color: #007BFF;
-      padding: 10px 0;
-  }
-  
-  /* Style for the navigation menu */
-  nav {
-      text-align: center;
-  }
-  
-  /* Style for the navigation links */
-  ul {
-      list-style: none;
-      padding: 0;
-  }
-  
-  li {
-      display: inline;
-      margin-right: 10px;
-  }
-  
-  a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-  }
-  
-  /* Hover effect for links */
-  a:hover {
-      text-decoration: underline;
-  }
+/* Apply styles to the features section */
+#features {
+    padding: 40px 0; /* Add vertical padding */
+    text-align: center; /* Center align text content */
+}
+
+/* Style the feature cards */
+.feature-card {
+    background-color: #fff; /* Set card background color */
+    border: 1px solid #e0e0e0; /* Add a subtle border around the card */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    margin: 20px; /* Add margin for spacing between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+/* Hover effect for feature cards */
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+/* Style the feature card headings */
+.feature-card h3 {
+    font-size: 1.8rem; /* Increase the heading font size */
+    color: #333; /* Set the heading color */
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+/* Style the feature card paragraphs */
+.feature-card p {
+    font-size: 1.2rem; /* Set the paragraph font size */
+    color: #666; /* Set the paragraph color */
+}
+
+/* Apply styles to the entire section */
+#features h2 {
+    font-size: 2.5rem; /* Increase the section heading font size */
+    color: #333; /* Set the section heading color */
+    margin-bottom: 20px; /* Add spacing below the section heading */
+}
+
+
+/* Style for the header */
+header {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+/* Style for the navigation menu */
+nav {
+    text-align: center;
+}
+
+/* Style for the navigation links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
   
 
 /* Style for the <main> element */

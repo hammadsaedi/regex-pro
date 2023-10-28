@@ -29,19 +29,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function populateHome() {
     // Clear the existing content in the <main> element
-    mainElement.innerHTML = '';
-
-    if (pages.regex) {
-        // Create a heading for the home page
-        const homeHeading = document.createElement("h2");
-        homeHeading.textContent = pages.regex.title;
-        mainElement.appendChild(homeHeading);
-
-        // Create a paragraph for the home page
-        const homePara = document.createElement("p");
-        homePara.textContent = pages.regex.explanation;
-        mainElement.appendChild(homePara);
-    }
+    mainElement.innerHTML = `
+        <section id="features">
+            <h2>Discover the Power of Regular Expressions</h2>
+            <p>Regex Pro is your all-in-one solution for working with regular expressions. Whether you're a developer or just curious about regex, we've got you covered.</p>
+            <div class="feature-card">
+                <h3>Regular Expression Testing</h3>
+                <p>Test your regular expressions against sample text and see instant results. Debug and perfect your regex patterns effortlessly.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Data Validation</h3>
+                <p>Use our pre-built validation forms to check data types like dates, URLs, and more. Ensure your input data meets your criteria.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Data Extraction</h3>
+                <p>Effortlessly extract information from text using regular expressions. Extract emails, phone numbers, and more with ease.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Data Sanitization</h3>
+                <p>Cleanse your data by removing unwanted content, such as HTML or SQL code. Keep your data safe and tidy.</p>
+            </div>
+        </section>`;
 }
 
 function populateValidationForms() {
