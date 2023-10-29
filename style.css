@@ -4,47 +4,65 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 /* Apply styles to the features section */
 #features {
-    padding: 40px 0; /* Add vertical padding */
-    text-align: center; /* Center align text content */
+    padding: 40px 0;
+    /* Add vertical padding */
+    text-align: center;
+    /* Center align text content */
 }
 
 /* Style the feature cards */
 .feature-card {
-    background-color: #fff; /* Set card background color */
-    border: 1px solid #e0e0e0; /* Add a subtle border around the card */
-    border-radius: 8px; /* Add rounded corners */
-    padding: 20px; /* Add padding inside the card */
-    margin: 20px; /* Add margin for spacing between cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-    transition: transform 0.2s; /* Add a smooth transition effect */
+    background-color: #fff;
+    /* Set card background color */
+    border: 1px solid #e0e0e0;
+    /* Add a subtle border around the card */
+    border-radius: 8px;
+    /* Add rounded corners */
+    padding: 20px;
+    /* Add padding inside the card */
+    margin: 20px;
+    /* Add margin for spacing between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a shadow for depth */
+    transition: transform 0.2s;
+    /* Add a smooth transition effect */
 }
 
 /* Hover effect for feature cards */
 .feature-card:hover {
-    transform: translateY(-5px); /* Lift the card slightly on hover */
+    transform: translateY(-5px);
+    /* Lift the card slightly on hover */
 }
 
 /* Style the feature card headings */
 .feature-card h3 {
-    font-size: 1.8rem; /* Increase the heading font size */
-    color: #333; /* Set the heading color */
-    margin-bottom: 10px; /* Add spacing below the heading */
+    font-size: 1.8rem;
+    /* Increase the heading font size */
+    color: #333;
+    /* Set the heading color */
+    margin-bottom: 10px;
+    /* Add spacing below the heading */
 }
 
 /* Style the feature card paragraphs */
 .feature-card p {
-    font-size: 1.2rem; /* Set the paragraph font size */
-    color: #666; /* Set the paragraph color */
+    font-size: 1.2rem;
+    /* Set the paragraph font size */
+    color: #666;
+    /* Set the paragraph color */
 }
 
 /* Apply styles to the entire section */
 #features h2 {
-    font-size: 2.5rem; /* Increase the section heading font size */
-    color: #333; /* Set the section heading color */
-    margin-bottom: 20px; /* Add spacing below the section heading */
+    font-size: 2.5rem;
+    /* Increase the section heading font size */
+    color: #333;
+    /* Set the section heading color */
+    margin-bottom: 20px;
+    /* Add spacing below the section heading */
 }
 
 
@@ -80,7 +98,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-  
+
 
 /* Style for the <main> element */
 main {
@@ -144,4 +162,17 @@ input[type="text"].invalid {
 input.required:invalid,
 textarea.required:invalid {
     border: 2px solid red;
+}
+
+/* Style for footer */
+footer {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
 }
