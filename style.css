@@ -140,6 +140,10 @@ textarea {
     /* Remove the focus outline */
 }
 
+textarea{
+    overflow-y: hidden;
+}
+
 /* Style for the submit button */
 button[type="submit"] {
     background-color: #007BFF;

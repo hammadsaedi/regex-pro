@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     sanitizationLink.addEventListener("click", function () {
         populateSanitizationForm();
     });
+
+ 
 });
 
 function populateHome() {
@@ -71,6 +73,12 @@ function populateValidationForms() {
             mainElement.appendChild(form);
         });
     }
+    const textareas = document.querySelectorAll('textarea')
+    textareas.forEach((textarea) => {
+        textarea.addEventListener('input', () => {
+            dynamicTextarea(textarea)
+        })
+    })
 }
 
 function populateExtractionForms() {
@@ -110,4 +118,9 @@ function populateSanitizationForm(){
             mainElement.appendChild(form);
         });
     }
+}
+
+function dynamicTextarea(textarea){
+    textarea.style.height = "auto"
+    textarea.style.height = textarea.scrollHeight + "px"
 }
