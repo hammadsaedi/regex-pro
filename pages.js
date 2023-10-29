@@ -22,9 +22,9 @@ const sanitizationForm = [
         "regexPattern": "<.*?>"
     },
     {
-        "title": "Remove SQL Code",
-        "explanation": "Remove SQL code from text",
-        "regexPattern": "--.*$|/\*[\s\S]*?\*/|SELECT.*?FROM|UPDATE.*?SET|INSERT INTO.*?VALUES|DELETE FROM.*?WHERE"
+        "title": "Extract URL Code",
+        "explanation": "Extract URL using regular expression",
+        "regexPattern": "(https?://)?(www\.)?[\w.-]+\.\w+"
     },
 ];
 
