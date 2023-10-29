@@ -72,13 +72,8 @@ function populateValidationForms() {
             form.dataset.formId = index;
             mainElement.appendChild(form);
         });
+        dynamicTextarea()
     }
-    const textareas = document.querySelectorAll('textarea')
-    textareas.forEach((textarea) => {
-        textarea.addEventListener('input', () => {
-            dynamicTextarea(textarea)
-        })
-    })
 }
 
 function populateExtractionForms() {
@@ -98,6 +93,7 @@ function populateExtractionForms() {
             form.dataset.formId = index;
             mainElement.appendChild(form);
         });
+        dynamicTextarea()
     }
 }
 
@@ -117,10 +113,16 @@ function populateSanitizationForm(){
             form.dataset.formId = index;
             mainElement.appendChild(form);
         });
+        dynamicTextarea()
     }
 }
 
-function dynamicTextarea(textarea){
-    textarea.style.height = "auto"
-    textarea.style.height = textarea.scrollHeight + "px"
+function dynamicTextarea(){
+    const textareas = document.querySelectorAll('textarea')
+    textareas.forEach((textarea) => {
+        textarea.addEventListener('input', () => {
+            textarea.style.height = "auto"
+            textarea.style.height = textarea.scrollHeight + "px"
+        })
+    })
 }
