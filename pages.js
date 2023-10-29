@@ -9,6 +9,11 @@ const validationForms = [
         "explanation": "This regular expression should match passwords that adhere to security best practices.",
         "regexPattern": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$"
     },
+    {
+        "title": "Credit Card Validation",
+        "explanation": "This regular expression should match common credit cards such as Visa, Mastercard, AMEX, etc."
+        "regexPattern": "^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+    }
 ];
 
 // extraction form 
