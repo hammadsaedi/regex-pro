@@ -4,6 +4,11 @@ const validationForms = [
         "explanation": "This regular expression should match a 4-digit number.",
         "regexPattern": "^\\d{4}$"
     },
+    {
+        "title": "Password Validation",
+        "explanation": "This regular expression should match passwords that adhere to security best practices.",
+        "regexPattern": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$"
+    },
 ];
 
 // extraction form 
