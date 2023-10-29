@@ -6,6 +6,7 @@ const validationForms = [
     },
 ];
 
+// extraction form 
 const extractionForms = [
     {
         "title": "Capital letters",
@@ -19,6 +20,11 @@ const sanitizationForm = [
         "title": "Remove HTML",
         "explanation": "Remove all HTML tags from text",
         "regexPattern": "<.*?>"
+    },
+    {
+        "title": "Extract URL Code",
+        "explanation": "Extract URL using regular expression",
+        "regexPattern": "(https?://)?(www\.)?[\w.-]+\.\w+"
     },
 ];
 
