@@ -6,6 +6,7 @@ const validationForms = [
     },
 ];
 
+// extraction form 
 const extractionForms = [
     {
         "title": "Capital letters",
@@ -19,6 +20,11 @@ const sanitizationForm = [
         "title": "Remove HTML",
         "explanation": "Remove all HTML tags from text",
         "regexPattern": "<.*?>"
+    },
+    {
+        "title": "Remove SQL Code",
+        "explanation": "Remove SQL code from text",
+        "regexPattern": "--.*$|/\*[\s\S]*?\*/|SELECT.*?FROM|UPDATE.*?SET|INSERT INTO.*?VALUES|DELETE FROM.*?WHERE"
     },
 ];
 
