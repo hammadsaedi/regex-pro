@@ -1,12 +1,12 @@
 # Contributing to Regex Pro
 
-Thank you for considering contributing to [Your Project Name]! By participating in this project, you agree to abide by the Code of Conduct (see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)).
+Thank you for considering contributing to [Regex-Pro](README.md)! By participating in this project, you agree to abide by the Code of Conduct (see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)).
 
 We welcome contributions in various forms, including bug reports, feature requests, code improvements, and more. Please take a moment to review the following guidelines to help streamline the contribution process.
 
 ## How to Contribute
 
-To contribute to [Your Project Name], follow these steps:
+To contribute to [Regex-Pro](README.md), follow these steps:
 
 1. **Fork the repository:** Click the "Fork" button on the top right of the repository's page to create your copy of the project.
 
@@ -42,4 +42,4 @@ If you have ideas for new features or improvements, we encourage you to open an 
 
 By contributing to this project, you agree that your contributions will be licensed under the project's open-source license (if applicable). See the [LICENSE](LICENSE) file for details.
 
-Thank you for contributing to [Your Project Name] and for being a part of the community! :heart:
+Thank you for contributing to [Regex-Pro](README.md) and for being a part of the community! :heart:
