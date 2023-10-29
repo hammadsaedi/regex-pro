@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     sanitizationLink.addEventListener("click", function () {
         populateSanitizationForm();
     });
+
+ 
 });
 
 function populateHome() {
@@ -70,6 +72,7 @@ function populateValidationForms() {
             form.dataset.formId = index;
             mainElement.appendChild(form);
         });
+        dynamicTextarea()
     }
 }
 
@@ -90,6 +93,7 @@ function populateExtractionForms() {
             form.dataset.formId = index;
             mainElement.appendChild(form);
         });
+        dynamicTextarea()
     }
 }
 
@@ -109,6 +113,7 @@ function populateSanitizationForm(){
             form.dataset.formId = index;
             mainElement.appendChild(form);
         });
+        dynamicTextarea()
     }
 }
 
@@ -125,3 +130,13 @@ navLinks.forEach(link => {
         navList.classList.remove('active');
     });
 });
+
+function dynamicTextarea(){
+    const textareas = document.querySelectorAll('textarea')
+    textareas.forEach((textarea) => {
+        textarea.addEventListener('input', () => {
+            textarea.style.height = "auto"
+            textarea.style.height = textarea.scrollHeight + "px"
+        })
+    })
+}
