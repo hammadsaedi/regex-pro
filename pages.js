@@ -18,6 +18,11 @@ const extractionForms = [
         "explanation": "Extract URL using regular expression",
         "regexPattern": "(https?://www\.|http://www\.|https://|http://)?[a-zA-Z0-9-]+\.[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
     },
+    {
+        "title": "IP Address",
+        "explanation": "Extract all IP Address from text",
+        "regexPattern": "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?(\.|$)){4}"
+    },
 ];
 
 const sanitizationForm = [
