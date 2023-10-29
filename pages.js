@@ -12,7 +12,12 @@ const extractionForms = [
         "title": "Capital letters",
         "explanation": "Extract all capital letters from text",
         "regexPattern": "[A-Z]"
-    }
+    },
+    {
+        "title": "Extract URL Code",
+        "explanation": "Extract URL using regular expression",
+        "regexPattern": "(https?://www\.|http://www\.|https://|http://)?[a-zA-Z0-9-]+\.[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+    },
 ];
 
 const sanitizationForm = [
@@ -20,11 +25,6 @@ const sanitizationForm = [
         "title": "Remove HTML",
         "explanation": "Remove all HTML tags from text",
         "regexPattern": "<.*?>"
-    },
-    {
-        "title": "Extract URL Code",
-        "explanation": "Extract URL using regular expression",
-        "regexPattern": "(https?://)?(www\.)?[\w.-]+\.\w+"
     },
 ];
 
