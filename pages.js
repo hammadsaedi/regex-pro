@@ -13,7 +13,7 @@ const validationForms = [
     {
         "title": "Global Phone Number Validation",
         "explanation": "This regular expression allows a wide range of phone number formats.",
-        "regexPattern": /^(\+?\d{1,4}[\s.-]?)?\(?\d{1,4}\)?[\s.-]?\d{1,15}$/
+        "regexPattern": /^(\+\d{1,4}[\s.-]?)?(\(\d{1,4}\)|\d{1,4})[\s.-]?\d{1,4}[\s.-]?\d{4}$/
     },
     
 ];
