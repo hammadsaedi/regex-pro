@@ -9,6 +9,11 @@ const validationForms = [
         "explanation": "This regular expression should match passwords that adhere to security best practices.",
         "regexPattern": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$"
     },
+    {
+        "title": "COMSATS e-mail validation",
+        "explanation": "Validates the official academic e-mail assigned to students of COMSATS",
+        "regexPattern": "^((fa)|(sp))\d{2}-[a-z]{3}-\d{3}@[a-z]{3}student\.comsats\.edu\.(pk$)"
+    },
 ];
 
 // extraction form 
