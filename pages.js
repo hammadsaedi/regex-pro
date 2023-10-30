@@ -9,6 +9,13 @@ const validationForms = [
         "explanation": "This regular expression should match passwords that adhere to security best practices.",
         "regexPattern": "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$"
     },
+
+    {
+        "title": "Global Phone Number Validation",
+        "explanation": "This regular expression allows a wide range of phone number formats.",
+        "regexPattern": /^(\+\d{1,4}[\s.-]?)?(\(\d{1,4}\)|\d{1,4})[\s.-]?\d{1,4}[\s.-]?\d{4}$/
+    },
+    
 ];
 
 // extraction form 
