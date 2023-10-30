@@ -203,6 +203,20 @@ footer {
         padding: 100px 0;
     }
 
+    #features h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #features h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    #features p {
+        font-size: 0.8rem;
+    }
+
     li {
         margin-top: 20px;
     }
