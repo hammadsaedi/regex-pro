@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         populateSanitizationForm();
     });
 
- 
+
 });
 
 function populateHome() {
@@ -97,7 +97,7 @@ function populateExtractionForms() {
     }
 }
 
-function populateSanitizationForm(){
+function populateSanitizationForm() {
     if (pages.sanitization && pages.sanitization.length > 0) {
         // Clear the existing content in the <main> element
         mainElement.innerHTML = '';
@@ -131,7 +131,7 @@ navLinks.forEach(link => {
     });
 });
 
-function dynamicTextarea(){
+function dynamicTextarea() {
     const textareas = document.querySelectorAll('textarea')
     textareas.forEach((textarea) => {
         textarea.addEventListener('input', () => {

@@ -1,3 +1,23 @@
+body {
+    color: black;
+    font-size: 25px;
+    transition: background-color 0.5s;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode h2 {
+    color: blue;
+}
+
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -146,7 +166,7 @@ textarea {
     /* Remove the focus outline */
 }
 
-textarea{
+textarea {
     overflow-y: hidden;
 }
 
