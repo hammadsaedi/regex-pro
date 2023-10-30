@@ -4,7 +4,7 @@ Regex Pro is a regular expression tester. It allows you to test your regular exp
 
 ## Demo
 
-Visit [Regex Pro](https://hammadsaedi.github.io/regex-pro/)
+Visit [Regex Pro](hammadsaedi.github.io/regex-pro/)
 
 ## Tech Stack
 
