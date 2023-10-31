@@ -39,6 +39,11 @@ const extractionForms = [
         "title": "IP Address",
         "explanation": "Extract all IP Address from text",
         "regexPattern": "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?(\.|$)){4}"
+    },  
+    {
+        "title": "Phone Number",
+        "explanation": "Extract Phone Number from text (International number must begin with `+`)",
+        "regexPattern": "^(\\+[0-9]{2,3}\\s?)?1?[-.]?\\s?\\(?[0-9]{3}\\)?[\\s.-]?[0-9]{3}[\\s.-]?[0-9]{4}$"
     },
 ];
 
