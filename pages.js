@@ -13,10 +13,10 @@ const validationForms = [
         "title": "Global Phone Number Validation",
         "explanation": "This regular expression allows a wide range of phone number formats.",
         "regexPattern": "^(\\+[0-9]{1,2}\\s?)?1?[-.]?\\s?\\(?[0-9]{3}\\)?[\\s.-]?[0-9]{3}[\\s.-]?[0-9]{4}$"
-    }    
+    }
 ];
 
-// extraction form 
+// extraction form
 const extractionForms = [
     {
         "title": "Capital letters",
@@ -53,7 +53,15 @@ const sanitizationForm = [
         "explanation": "Remove all HTML tags from text",
         "regexPattern": "<.*?>"
     },
+    {
+        "title": "Remove SQL",
+        "explanation": "Remove all SQL keywords and statements",
+        "regexPattern": "\\b(INSERT|SELECT|UPDATE|DELETE|DROP|ALTER|CREATE)\\b",
+        "flags": "i"
+    }
 ];
+
+
 
 const pages = {
     "regex": {
