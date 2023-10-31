@@ -42,8 +42,8 @@ const extractionForms = [
     },  
     {
         "title": "Phone Number",
-        "explanation": "Extract 10-12 Digit Phone Number from text",
-        "regexPattern": "^[\+]?[(]?[0-9]{3}[)]?\s*[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+        "explanation": "Extract Phone Number from text (International number must begin with `+`)",
+        "regexPattern": "^(\\+[0-9]{2,3}\\s?)?1?[-.]?\\s?\\(?[0-9]{3}\\)?[\\s.-]?[0-9]{3}[\\s.-]?[0-9]{4}$"
     },
 ];
 
