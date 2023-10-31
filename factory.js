@@ -78,7 +78,7 @@ function createExtractionForm(title, explanation, regexPattern) {
         while (match !== null) {
             matches.push(match[0]);
             match = regexObj.exec(String(text));
-        }        
+        }
         return matches;
     }
 
@@ -147,8 +147,8 @@ function createSanitizationForm(title, explanation, regexPattern) {
     // Add a textarea for sanitized input
     const sanitizedTextarea = document.createElement("textarea");
     sanitizedTextarea.setAttribute("readonly", "true");
-    
-       
+
+
     // Add a text input for user input
     const textInput = document.createElement("input");
     textInput.setAttribute("type", "text");
@@ -166,7 +166,7 @@ function createSanitizationForm(title, explanation, regexPattern) {
         sanitizedTextarea.value = sanitization(textInput.value, regexTextarea.textContent);
     });
 
- 
+
 
     // Append the form elements to the form
     form.appendChild(textInput);
@@ -175,4 +175,4 @@ function createSanitizationForm(title, explanation, regexPattern) {
 
     return form;
 }
-export { createFormWithRegex, createExtractionForm, createSanitizationForm}; 
+export { createFormWithRegex, createExtractionForm, createSanitizationForm};
