@@ -51,7 +51,8 @@ const sanitizationForm = [
     {
         "title": "Remove SQL",
         "explanation": "Remove all SQL keywords and statements",
-        "regexPattern": "\\b(INSERT|SELECT|UPDATE|DELETE|DROP|ALTER|CREATE)\\b"
+        "regexPattern": "\\b(INSERT|SELECT|UPDATE|DELETE|DROP|ALTER|CREATE)\\b",
+        "flags": "i"
     }
 ];
 
