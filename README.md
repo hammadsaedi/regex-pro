@@ -4,7 +4,8 @@ Regex Pro is a regular expression tester. It allows you to test your regular exp
 
 ## Demo
 
-visit [Regex Pro]()
+Visit [Regex Pro](https://hammadsaedi.github.io/regex-pro/)
+<a href="https://hammadsaedi.github.io/regex-pro/"><img src="https://user-images.githubusercontent.com/71373419/279142999-1a6dcd95-1998-4011-850f-b6d443b989ff.png" /></a>
 
 ## Tech Stack
 
@@ -14,7 +15,7 @@ HTML, CSS, JavaScript
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
