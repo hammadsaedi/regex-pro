@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         populateSanitizationForm();
     });
 
- 
+
 });
 
 function populateHome() {
@@ -140,3 +140,11 @@ function dynamicTextarea(){
         })
     })
 }
+
+const toggleSwitch = document.querySelector('.toggle-switch');
+
+toggleSwitch.addEventListener('click', () => {
+  toggleSwitch.classList.toggle('active');
+  document.body.classList.toggle('dark');
+});
+
