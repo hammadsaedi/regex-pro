@@ -1,6 +1,6 @@
 // jest.config.js
 module.exports = {
-    testEnvironment: 'jest-environment-jsdom',
+    testEnvironment: 'jest-environment-node',
     transform: {
       '^.+\\.js$': 'babel-jest',
     },

@@ -14,7 +14,7 @@ To contribute to [Regex-Pro](README.md), follow these steps:
 
 3. **Make your changes:** Implement your changes and ensure that your code adheres to the project's coding standards.
 
-4. **Test your changes:** If applicable, write tests for your code and ensure they pass.
+4. **Test your changes:** Run the included Jest testing suites and if applicable, write tests for your code and ensure they pass. Details on configuring test environment and running tests are detailed in [TESTING.md](TESTING.md).
 
 5. **Commit your changes:** Commit your changes with a clear and concise commit message that describes the purpose of your changes.
 

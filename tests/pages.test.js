@@ -4,8 +4,8 @@
 import { TextEncoder, TextDecoder } from 'util';
 Object.assign(global, { TextDecoder, TextEncoder });
 import { JSDOM } from "jsdom";
-import { createFormWithRegex, createExtractionForm, createSanitizationForm } from "./factory.js";
-import pages from "./pages";
+import { createFormWithRegex, createExtractionForm, createSanitizationForm } from "../factory.js";
+import pages from "../pages.js";
 
 // Set up JSDOM
 const dom = new JSDOM();
@@ -16,7 +16,7 @@ const mockInputEvent = new Event('input');
 
 describe('Validation Forms', () => {
   pages.validation.forEach((validationForm) => {
-    test(`it should create a validation form for ${validationForm.title}`, () => {
+    test(`Creates a validation form for ${validationForm.title}`, () => {
       const form = createFormWithRegex(validationForm.title, validationForm.explanation, validationForm.regexPattern);
       
       // Assertions for form structure
@@ -42,7 +42,7 @@ describe('Validation Forms', () => {
 
 describe('Extraction Forms', () => {
   pages.extraction.forEach((extractionForm) => {
-    test(`it should create an extraction form for ${extractionForm.title}`, () => {
+    test(`Creates an extraction form for ${extractionForm.title}`, () => {
       const form = createExtractionForm(extractionForm.title, extractionForm.explanation, extractionForm.regexPattern);
       
       // Assertions for form structure
@@ -70,7 +70,7 @@ describe('Extraction Forms', () => {
 
 describe('Sanitization Forms', () => {
   pages.sanitization.forEach((sanitizationForm) => {
-    test(`it should create a sanitization form for ${sanitizationForm.title}`, () => {
+    test(`Creates a sanitization form for ${sanitizationForm.title}`, () => {
       const form = createSanitizationForm(sanitizationForm.title, sanitizationForm.explanation, sanitizationForm.regexPattern);
       
       // Assertions for form structure
